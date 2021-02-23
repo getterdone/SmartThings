@@ -43,7 +43,8 @@ metadata {
 		name: "GreenWave PowerNode 6 Zooz Frankenstein VER 2.0", 
 		namespace: "getterdone", 
 		author: "Ulices Soriano",
-		vid:"generic-switch-power-energy"
+		ocfDeviceType: "oic.d.smartplug"
+		//vid:"generic-switch-power-energy"
 	) {
 		capability "Actuator"
 		capability "Sensor"
