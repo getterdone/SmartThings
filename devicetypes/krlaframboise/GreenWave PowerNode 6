@@ -338,9 +338,10 @@ private addChildOutlet(dni, endPoint) {
 		[
 			completedSetup: true,
 			isComponent: false,
-			label: "${device.displayName}-CH${endPoint}",
-			componentLabel: "CH ${endPoint}",
-			componentName: "CH${endPoint}"
+			label: "CH${endPoint}-${device.displayName}"     //switch display of child channel, since the longname get's lost in the OneApp frontend display
+			//label: "${device.displayName}-CH${endPoint}",
+			//componentLabel: "CH ${endPoint}",		//fix for OneApp per original author Karl for child device control
+			//componentName: "CH${endPoint}"		//fix for OneApp per original author Karl for child device control
 		]
 	)
 }
